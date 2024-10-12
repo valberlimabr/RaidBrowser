@@ -1,44 +1,37 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # RaidBrowser
-Bringing LFR to Wotlk (Non-Classic).
+Trazendo LFR para Wotlk (3.3.5a).
 
-This addon replaces the unused (in 3.3.5a) LFR tab in the social menu with a working raid finder. RaidBrowser works similarly to Live WoW's group finder, except raid leaders do not need to interact with the addon to list their group. RaidBrowser searches for LFR messages sent in chat and /y channels and lists any found raids in the "Browse" tab of the raid browser. 
+Este Addon substitui a aba LFR não utilizada (em 3.3.5a) no menu social por um localizador de raid funcional. O RaidBrowser funciona de forma semelhante ao localizador de grupos do Live WoW, exceto que os líderes de raid não precisam interagir com o Addon para listar seu grupo. O RaidBrowser procura mensagens LFR enviadas em canais do chat e /y e lista quaisquer raids encontradas na aba "Navegar" do navegador de raid.
 
-When searching for a raid to join in Global, there can be large amounts of text (and meaningless spam) to read in order to find anything. This addon does all the text processing work and lists all the raids in a coherent format. Each entry in the raid browser is formatted as follows to include raid leader name, raid name, gearscore requirements, and the list of needed roles (tank/healer/dps).
+Ao procurar por um raid para participar no Global, pode haver grandes quantidades de texto (e spam sem sentido) para ler a fim de encontrar qualquer coisa. Este complemento faz todo o trabalho de processamento de texto e lista todos os raids em um formato coerente. Cada entrada no navegador de raid é formatada da seguinte forma para incluir o nome do líder do raid, nome do raid, requisitos de gearscore e a lista de funções necessárias (tank/healer/dps).
 
 ![alt text](https://i.imgur.com/6aqE1TD.png)
 
-No longer will you join a raid and embarrass yourself upon realizing that you've already been locked into that raid for the week. RaidBrowser clearly highlights locked raids in red (e.g. ![alt text](https://i.imgur.com/hvTL7s8.png) ). Any raids for which you are not saved are marked in bright green (e.g. ![alt text](https://i.imgur.com/5SkqcwA.png) ). Thus, you will know beforehand whether you should ignore that raid or not.
+Você não vai mais entrar em uma raid e passar vergonha ao perceber que já possui cooldown naquela raid feita na semana. O RaidBrowser destaca claramente as raids bloqueadas em vermelho (exemplo. ![alt text](https://i.imgur.com/hvTL7s8.png) ). Qualquer raid para o qual você não está em cooldown é marcado em verde brilhante (exemplo. ![alt text](https://i.imgur.com/5SkqcwA.png) ). Assim, você saberá de antemão se deve ignorar essa raid ou não.
 
-# Features
+# Como Baixar
 
-- Easily find raids hosted by other players by searching for "LFM barks" in global/trade/any chat channels. Raids are listed along with the required roles, and the minimum gearscore requirement, if any were mentioned in the message.
-- Identifies saved raids by coloring their name as red for locked raids, and green for unsaved raids.
-- Join / Double click: After clicking on an entry in the raid browser, send a formatted message to the raid host with your GS, class, spec, and highest achievement obtained for that raid.
-- Tooltip Hover: Hovering your mouse over an entry in the raid browser shows the original chat message, as well as how long it's been since the message was sent.
-- Create primary and secondary raid sets (Ex: Elemental 5641gs) for use in join messages. In the given example, your message will be formatted in a manner similar to "inv 5641gs Elemental Shaman <possible achievement link>". If you are pvping in WG while searching for raids, the addon will send information from the currently selected raidset to the raid host instead of your pvp (spec, gs).
-- Raid hosts that do not send a message after 1-2 minutes will have their entry expire in the raid browser. This ensures that the raid browser does not become cluttered.
-  
-# How to Download
+Para baixar a versão estável mais recente, clique em "releases" que está na aba de estatísticas do repositório sob a descrição do addon (exemplo: https://github.com/Ostoic/RaidBrowser/releases/latest). O arquivo .zip 
+é a pasta do addon, então certifique-se de descompactar essa pasta para uma chamada "RaidBrowser", então siga as instruções abaixo.
 
-In order to download the latest stable version, click on "releases" which is in the repository statistics tab under the addon description (example: https://github.com/Ostoic/RaidBrowser/releases/latest). The .zip file is the addon folder, so make sure you unzip that folder to one named "RaidBrowser", then follow the instructions below.
+# Instalação e modo de usar
+Assim como qualquer outro addon, copie a pasta RaidBrowser para o seu diretório /Interface/AddOns dentro da pasta do WoW.
+Quando estiver no jogo, digite /rb para ativar a IU do navegador de raid. Como alternativa, a interface pode ser acessada da seguinte forma:
+1. Abra o menu social (Pressione O),
+2. Selecione a aba "Raid",
+3. Clique em "Open Raid Browser"
 
-# Installation and Usage
-As with any other addon, copy the RaidBrowser folder into your %WoW Folder%/Interface/AddOns directory. 
-When ingame, type /rb to activate the raid browser UI. Alternatively, the interface can be accessed as follows:
-1. Open the social menu (Press O),
-2. Select the "Raid" tab,
-3. Click "Open Raid Browser"
+É importante entrar no canal global para que o addon encontre raids. Se você não quiser que sua janela de bate-papo fique cheia de bate-papo global,
+você pode simplesmente ocultar o canal global da sua janela de bate-papo padrão.
 
-It is important to join the global channel in order for the addon to find raids. If you don't want your chat window to be filled with global chatter, you can simply hide the global channel from your default chat window. 
+1. Clique com o botão direito na aba "General"
+2. Clique em configurações (under Filters)
+3. Selecione a aba "Global Channels"
+4. Certifique-se de que "global" esteja desmarcado na lista de canais.
 
-1. Right click the "General" tab
-2. Click settings (under Filters)
-3. Select the Global Channels tab
-4. Make sure "global" is unchecked in the list of channels.
-
-Now RaidBrowser will be able to find raids without having global being dumped into the General chat window.
+Agora o RaidBrowser poderá encontrar raids sem que o global seja despejado na janela de bate-papo geral.
 
 See the common issues section for further help.
 
